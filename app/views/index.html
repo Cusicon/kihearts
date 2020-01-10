@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <title>
+    KiHearts -- Dashboard
+  </title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta content="Your key to unlocking financial success...
+    Crowdfunding, Advertising, Investment and Loan" name="description" />
+  <meta content="KiHearts" name="author" />
+  <meta content="Cusicon" name="developer" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- App favicon -->
+  <link rel="shortcut icon" href="assets/images/favicon.ico">
+
+  <!-- App css -->
+  <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+  <link href="assets/css/icons.min.css" rel="stylesheet" type="text/css" />
+  <link href="assets/css/app.min.css" rel="stylesheet" type="text/css" />
+
+</head>
+
+<body class="center-menu">
+
+  <!-- Navigation Bar-->
+  <header id="topnav">
+
+    <!-- Topbar Start -->
+    <div class="navbar-custom">
+      <div class="container-fluid">
+        <ul class="list-unstyled topnav-menu float-right mb-0">
+
+          <li class="dropdown notification-list">
+            <!-- Mobile menu toggle-->
+            <a class="navbar-toggle nav-link">
+              <div class="lines">
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+            </a>
+            <!-- End mobile menu toggle-->
+          </li>
+
+          <li class="dropdown d-none d-lg-block hide">
+            <a class="nav-link dropdown-toggle mr-0" data-toggle="dropdown" href="#" role="button" aria-haspopup="false"
+              aria-expanded="false">
+              <img src="assets/images/flags/us.jpg" alt="user-image" class="mr-1" height="12">
+              <span class="align-middle">
+                English <i class="mdi mdi-chevron-down"></i>
+              </span>
+            </a>
+            <div class="dropdown-menu dropdown-menu-right">
+              <!-- item-->
+              <a href="javascript:void(0);" class="dropdown-item notify-item">
+                <img src="assets/images/flags/germany.jpg" alt="user-image" class="mr-1" height="12">
+                <span class="align-middle">German</span>
+              </a>
+
+              <!-- item-->
+              <a href="javascript:void(0);" class="dropdown-item notify-item">
+                <img src="assets/images/flags/italy.jpg" alt="user-image" class="mr-1" height="12">
+                <span class="align-middle">Italian</span>
+              </a>
+
+              <!-- item-->
+              <a href="javascript:void(0);" class="dropdown-item notify-item">
+                <img src="assets/images/flags/spain.jpg" alt="user-image" class="mr-1" height="12">
+                <span class="align-middle">Spanish</span>
+              </a>
+
+              <!-- item-->
+              <a href="javascript:void(0);" class="dropdown-item notify-item">
+                <img src="assets/images/flags/russia.jpg" alt="user-image" class="mr-1" height="12">
+                <span class="align-middle">Russian</span>
+              </a>
+
+            </div>
+          </li>
+
+          <li class="dropdown notification-list">
+            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="false"
+              aria-expanded="false">
+              <!-- <i class="fe-bell noti-icon"></i> -->
+              <span class="noti-icon">
+                🔔
+              </span>
+              <span class="badge badge-danger rounded-circle noti-icon-badge">2</span>
+            </a>
+            <div class="dropdown-menu dropdown-menu-right dropdown-lg">
+
+              <!-- item-->
+              <div class="dropdown-item noti-title">
+                <h5 class="m-0">
+                  <span class="float-right">
+                    <a href="#" class="text-dark">
+                      <small>Clear All</small>
+                    </a>
+                  </span>Notification
+                </h5>
+              </div>
+
+              <div class="slimscroll noti-scroll">
+
+                <!-- item-->
+                <a href="javascript:void(0);" class="dropdown-item notify-item">
+                  <div class="notify-icon">
+                    <img src="assets/images/users/user.jpg" class="img-fluid rounded-circle" alt="" /> </div>
+                  <p class="notify-details">Cristina Pride</p>
+                  <p class="text-muted mb-0 user-msg">
+                    <small>Hi, How are you? What about our next meeting</small>
+                  </p>
+                </a>
+
+                <!-- item-->
+                <a href="javascript:void(0);" class="dropdown-item notify-item active">
+                  <div class="notify-icon bg-warning"><i class="mdi mdi-comment-account-outline"></i>
+                  </div>
+                  <p class="notify-details">Caleb Flakelar commented on Admin<small class="text-muted">1 min ago</small>
+                  </p>
+                </a>
+
+                <!-- item-->
+                <a href="javascript:void(0);" class="dropdown-item notify-item">
+                  <div class="notify-icon bg-info"><i class="mdi mdi-account-plus"></i></div>
+                  <p class="notify-details">New user registered.<small class="text-muted">5 hours
+                      ago</small></p>
+                </a>
+
+                <!-- item-->
+                <a href="javascript:void(0);" class="dropdown-item notify-item">
+                  <div class="notify-icon">
+                    <img src="assets/images/users/user.jpg" class="img-fluid rounded-circle" alt="" /> </div>
+                  <p class="notify-details">Karen Robinson</p>
+                  <p class="text-muted mb-0 user-msg">
+                    <small>Wow ! this admin looks good and awesome design</small>
+                  </p>
+                </a>
+
+                <!-- item-->
+                <a href="javascript:void(0);" class="dropdown-item notify-item">
+                  <div class="notify-icon bg-danger"><i class="mdi mdi-comment-account-outline"></i>
+                  </div>
+                  <p class="notify-details">Caleb Flakelar commented on Admin<small class="text-muted">4 days
+                      ago</small></p>
+                </a>
+
+                <!-- item-->
+                <a href="javascript:void(0);" class="dropdown-item notify-item">
+                  <div class="notify-icon bg-primary">
+                    <i class="mdi mdi-heart"></i>
+                  </div>
+                  <p class="notify-details">Carlos Crouch liked
+                    <b>Admin</b>
+                    <small class="text-muted">13 days ago</small>
+                  </p>
+                </a>
+              </div>
+
+              <!-- All-->
+              <a href="javascript:void(0);" class="dropdown-item text-center text-primary notify-item notify-all">
+                View all
+                <i class="fi-arrow-right"></i>
+              </a>
+
+            </div>
+          </li>
+
+          <li class="dropdown notification-list">
+            <a class="nav-link dropdown-toggle nav-user mr-0" data-toggle="dropdown" href="#" role="button"
+              aria-haspopup="false" aria-expanded="false">
+              <img src="assets/images/users/user.jpg" alt="user-image" class="rounded-circle">
+              <span class="pro-user-name ml-1">
+                James Kr <i class="mdi mdi-chevron-down"></i>
+              </span>
+            </a>
+            <div class="dropdown-menu dropdown-menu-right profile-dropdown ">
+              <!-- item-->
+              <div class="dropdown-item noti-title">
+                <h6 class="m-0">
+                  Welcome !
+                </h6>
+              </div>
+
+              <!-- item-->
+              <a href="javascript:void(0);" class="dropdown-item notify-item">
+                <i class="dripicons-user"></i>
+                <span>My Account</span>
+              </a>
+
+              <!-- item-->
+              <a href="javascript:void(0);" class="dropdown-item notify-item">
+                <i class="dripicons-gear"></i>
+                <span>Settings</span>
+              </a>
+
+              <!-- item-->
+              <a href="javascript:void(0);" class="dropdown-item notify-item">
+                <i class="dripicons-help"></i>
+                <span>Support</span>
+              </a>
+
+              <!-- item-->
+              <a href="javascript:void(0);" class="dropdown-item notify-item">
+                <i class="dripicons-lock"></i>
+                <span>Lock Screen</span>
+              </a>
+
+              <div class="dropdown-divider"></div>
+
+              <!-- item-->
+              <a href="javascript:void(0);" class="dropdown-item notify-item">
+                <i class="dripicons-power"></i>
+                <span>Logout</span>
+              </a>
+
+            </div>
+          </li>
+
+          <li class="dropdown notification-list">
+            <a href="javascript:void(0);" class="nav-link right-bar-toggle">
+              <!-- <i class="fe-settings noti-icon"></i> -->
+              <span class="noti-icon" style="font-size: 25px;">
+                ⚙️
+              </span>
+            </a>
+          </li>
+
+        </ul>
+
+        <ul class="list-unstyled topnav-menu-left m-0">
+
+          <li class="logo-box float-left">
+            <a href="" class="logo">
+              <span class="logo-lg">
+                <img src="assets/images/logo-light.png" alt="" height="30">
+              </span>
+              <span class="logo-sm">
+                <img src="assets/images/logo-sm.png" alt="" height="30">
+              </span>
+            </a>
+          </li>
+          <li class="app-search d-none d-md-block">
+            <form>
+              <input type="text" placeholder="Search..." class="form-control">
+              <button type="submit" class="sr-only"></button>
+            </form>
+          </li>
+
+        </ul>
+      </div> <!-- end container-fluid-->
+    </div>
+    <!-- end Topbar -->
+
+
+    <div class="topbar-menu">
+      <div class="container-fluid">
+        <div id="navigation">
+          <!-- Navigation Menu-->
+          <ul class="navigation-menu">
+
+            <li class="has-submenu">
+              <a href="index.html">
+                <span>🖥</span>
+                Dashboard
+              </a>
+            </li>
+
+            <li class="has-submenu">
+              <a href="campaign.html">
+                <span>📦</span>
+                Campaigns
+              </a>
+            </li>
+
+            <li class="has-submenu">
+              <a href="donation.html">
+                <span>🎁</span>
+                Donations
+              </a>
+            </li>
+
+            <li class="has-submenu">
+              <a href="#">
+                <span>🔊</span>
+                Advertise
+              </a>
+              <ul class="submenu">
+                <li>
+                  <a href="#">Banner Ad</a>
+                </li>
+                <li>
+                  <a href="#">Text Ad</a>
+                </li>
+              </ul>
+            </li>
+
+            <li class="has-submenu">
+              <a href="#">
+                <span>🏘</span>
+                Investment
+              </a>
+            </li>
+
+            <li class="has-submenu">
+              <a href="#">
+                <span>💵</span>
+                Loan
+              </a>
+            </li>
+          </ul>
+          <!-- End navigation menu -->
+
+          <div class="clearfix"></div>
+        </div>
+        <!-- end #navigation -->
+      </div>
+      <!-- end container -->
+    </div>
+    <!-- end navbar-custom -->
+
+  </header>
+  <!-- End Navigation Bar-->
+
+  <!-- ============================================================== -->
+  <!-- Start Page Content here -->
+  <!-- ============================================================== -->
+
+  <div class="wrapper">
+    <div class="container-fluid">
+
+      <!-- start page title -->
+      <div class="row">
+        <div class="col-12 mb-2">
+          <div class="page-title-box">
+            <div class="page-title-right">
+              <ol class="breadcrumb m-0">
+                <li class="breadcrumb-item"><a href="javascript: void(0);">KiHearts</a></li>
+                <li class="breadcrumb-item active">Dashboard</li>
+              </ol>
+            </div>
+            <h4 class="page-title">Dashboard</h4>
+          </div>
+        </div>
+      </div>
+      <!-- end page title -->
+
+      <!-- start Dashboard -->
+      <div class="dashboard">
+        <!-- start row -->
+        <div class="row">
+          <div class="col-xl-6 col-lg-6">
+            <div class="card widget-flat" style="border-left: 3px solid #f1556c; border-right: 3px solid #f1556c;">
+              <div class="card-body p-0">
+                <div class="p-4 pt-5 pb-5">
+                  <div class="float-right">
+                    <!-- <i class="mdi mdi-cart text-primary widget-icon"></i> -->
+                    <span style="font-size: 65px;">
+                      🛒
+                    </span>
+                  </div>
+                  <h5 class="text-muted font-weight-normal mt-0">Total Campaigns</h5>
+                  <h3 class="mt-2">302</h3>
+                </div>
+                <div id="sparkline1"></div>
+              </div> <!-- end card-body-->
+            </div> <!-- end card-->
+          </div> <!-- end col-->
+
+          <div class="col-xl-6 col-lg-6">
+            <div class="card widget-flat" style="border-left: 3px solid #f7b84b; border-right: 3px solid #f7b84b;">
+              <div class="card-body p-0">
+                <div class="p-4 pt-5 pb-5">
+                  <div class="float-right">
+                    <!-- <i class="mdi mdi-currency-usd text-danger widget-icon"></i> -->
+                    <span style="font-size: 65px;">
+                      💰
+                    </span>
+                  </div>
+                  <h5 class="text-muted font-weight-normal mt-0">Total Income</h5>
+                  <h3 class="mt-2">2,187</h3>
+                </div>
+                <div id="sparkline2"></div>
+              </div> <!-- end card-body-->
+            </div> <!-- end card-->
+          </div> <!-- end col-->
+
+          <div class="col-xl-6 col-lg-6">
+            <div class="card widget-flat" style="border-left: 3px solid #25b343; border-right: 3px solid #25b343;">
+              <div class="card-body p-0">
+                <div class="p-4 pt-5 pb-5">
+                  <div class="float-right">
+                    <!-- <i class="mdi mdi-account-multiple text-primary widget-icon"></i> -->
+                    <span style="font-size: 65px;">
+                      👥
+                    </span>
+                  </div>
+                  <h5 class="text-muted font-weight-normal mt-0">Total Pledges</h5>
+                  <h3 class="mt-2">57</h3>
+                </div>
+                <div id="sparkline3"></div>
+              </div> <!-- end card-body-->
+            </div> <!-- end card-->
+          </div> <!-- end col-->
+
+          <div class="col-xl-6 col-lg-6">
+            <div class="card widget-flat" style="border-left: 3px solid #4b88e4; border-right: 3px solid #4b88e4;">
+              <div class="card-body p-0">
+                <div class="p-4 pt-5 pb-5">
+                  <div class="float-right">
+                    <!-- <i class="mdi mdi-eye-outline text-danger widget-icon"></i> -->
+                    <span style="font-size: 65px;">
+                      🔊
+                    </span>
+                  </div>
+                  <h5 class="text-muted font-weight-normal mt-0">Total Ads</h5>
+                  <h3 class="mt-2">431</h3>
+                </div>
+                <div id="sparkline4"></div>
+              </div> <!-- end card-body-->
+            </div> <!-- end card-->
+          </div> <!-- end col-->
+        </div>
+        <!-- end row -->
+      </div>
+      <!-- end Dashboard -->
+
+    </div>
+    <!-- end container-fluid -->
+  </div>
+  <!-- end wrapper -->
+
+  <!-- ============================================================== -->
+  <!-- End Page content -->
+  <!-- ============================================================== -->
+
+
+
+  <!-- Footer Start -->
+  <footer class="footer">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-6">
+          KiHearts Network - 2020 &copy; All Rights Reserved
+        </div>
+        <div class="col-md-6">
+          <div class="text-md-right footer-links d-none d-sm-block">
+            <a href="https://github.com/cusicon" target="blank">
+              Designed By -- Cusicon
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- end Footer -->
+
+  <!-- Right Sidebar -->
+  <div class="right-bar">
+    <div class="rightbar-title">
+      <a href="javascript:void(0);" class="right-bar-toggle float-right">
+        <i class="mdi mdi-close"></i>
+      </a>
+      <h5 class="m-0 text-white">Settings</h5>
+    </div>
+    <div class="slimscroll-menu">
+      <hr class="mt-0">
+      <h5 class="pl-3">Basic Settings</h5>
+      <hr class="mb-0" />
+
+
+      <div class="p-3">
+        <div class="checkbox checkbox-primary mb-2">
+          <input id="checkbox1" type="checkbox" checked>
+          <label for="checkbox1">
+            Notifications
+          </label>
+        </div>
+        <div class="checkbox checkbox-primary mb-2">
+          <input id="checkbox2" type="checkbox" checked>
+          <label for="checkbox2">
+            API Access
+          </label>
+        </div>
+        <div class="checkbox checkbox-primary mb-2">
+          <input id="checkbox3" type="checkbox">
+          <label for="checkbox3">
+            Auto Updates
+          </label>
+        </div>
+        <div class="checkbox checkbox-primary mb-2">
+          <input id="checkbox4" type="checkbox" checked>
+          <label for="checkbox4">
+            Online Status
+          </label>
+        </div>
+        <div class="checkbox checkbox-primary mb-0">
+          <input id="checkbox5" type="checkbox" checked>
+          <label for="checkbox5">
+            Auto Payout
+          </label>
+        </div>
+      </div>
+
+      <!-- Timeline -->
+      <hr class="mt-0" />
+      <h5 class="pl-3 pr-3">Messages <span class="float-right badge badge-pill badge-danger">25</span></h5>
+      <hr class="mb-0" />
+      <div class="p-3">
+        <div class="inbox-widget">
+          <div class="inbox-item">
+            <div class="inbox-item-img"><img src="assets/images/users/user.jpg" class="rounded-circle" alt=""></div>
+            <p class="inbox-item-author"><a href="javascript: void(0);" class="text-dark">Chadengle</a></p>
+            <p class="inbox-item-text">Hey! there I'm available...</p>
+            <p class="inbox-item-date">13:40 PM</p>
+          </div>
+          <div class="inbox-item">
+            <div class="inbox-item-img"><img src="assets/images/users/user.jpg" class="rounded-circle" alt=""></div>
+            <p class="inbox-item-author"><a href="javascript: void(0);" class="text-dark">Tomaslau</a></p>
+            <p class="inbox-item-text">I've finished it! See you so...</p>
+            <p class="inbox-item-date">13:34 PM</p>
+          </div>
+          <div class="inbox-item">
+            <div class="inbox-item-img"><img src="assets/images/users/user.jpg" class="rounded-circle" alt=""></div>
+            <p class="inbox-item-author"><a href="javascript: void(0);" class="text-dark">Stillnotdavid</a>
+            </p>
+            <p class="inbox-item-text">This theme is awesome!</p>
+            <p class="inbox-item-date">13:17 PM</p>
+          </div>
+
+          <div class="inbox-item">
+            <div class="inbox-item-img"><img src="assets/images/users/user.jpg" class="rounded-circle" alt=""></div>
+            <p class="inbox-item-author"><a href="javascript: void(0);" class="text-dark">Kurafire</a></p>
+            <p class="inbox-item-text">Nice to meet you</p>
+            <p class="inbox-item-date">12:20 PM</p>
+
+          </div>
+          <div class="inbox-item">
+            <div class="inbox-item-img"><img src="assets/images/users/user.jpg" class="rounded-circle" alt=""></div>
+            <p class="inbox-item-author"><a href="javascript: void(0);" class="text-dark">Shahedk</a></p>
+            <p class="inbox-item-text">Hey! there I'm available...</p>
+            <p class="inbox-item-date">10:15 AM</p>
+          </div>
+          <br><br>
+        </div> <!-- end inbox-widget -->
+      </div> <!-- end .p-3-->
+
+    </div> <!-- end slimscroll-menu-->
+  </div>
+  <!-- /Right-bar -->
+
+  <!-- Right bar overlay-->
+  <div class="rightbar-overlay"></div>
+
+
+  <!-- Vendor js -->
+  <script src="assets/js/vendor.min.js"></script>
+
+  <!-- App js -->
+  <script src="assets/js/app.min.js"></script>
+
+</body>
+
+</html>

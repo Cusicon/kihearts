@@ -1,0 +1,689 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <title>
+    KiHearts -- Donations
+  </title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta content="Your key to unlocking financial success...
+    Crowdfunding, Advertising, Investment and Loan" name="description" />
+  <meta content="KiHearts" name="author" />
+  <meta content="Cusicon" name="developer" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- App favicon -->
+  <link rel="shortcut icon" href="assets/images/favicon.ico">
+
+  <!-- Dropzone css -->
+  <link href="assets/libs/dropzone/dropzone.min.css" rel="stylesheet" type="text/css">
+
+  <!-- App css -->
+  <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+  <link href="assets/css/icons.min.css" rel="stylesheet" type="text/css" />
+  <link href="assets/css/app.min.css" rel="stylesheet" type="text/css" />
+
+</head>
+
+<body class="center-menu">
+
+  <!-- Navigation Bar-->
+  <header id="topnav">
+
+    <!-- start Topbar -->
+    <div class="navbar-custom">
+      <div class="container-fluid">
+        <ul class="list-unstyled topnav-menu float-right mb-0">
+
+          <li class="dropdown notification-list">
+            <!-- Mobile menu toggle-->
+            <a class="navbar-toggle nav-link">
+              <div class="lines">
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+            </a>
+            <!-- End mobile menu toggle-->
+          </li>
+
+          <li class="dropdown d-none d-lg-block hide">
+            <a class="nav-link dropdown-toggle mr-0" data-toggle="dropdown" href="#" role="button" aria-haspopup="false"
+              aria-expanded="false">
+              <img src="assets/images/flags/us.jpg" alt="user-image" class="mr-1" height="12">
+              <span class="align-middle">
+                English <i class="mdi mdi-chevron-down"></i>
+              </span>
+            </a>
+            <div class="dropdown-menu dropdown-menu-right">
+              <!-- item-->
+              <a href="javascript:void(0);" class="dropdown-item notify-item">
+                <img src="assets/images/flags/germany.jpg" alt="user-image" class="mr-1" height="12">
+                <span class="align-middle">German</span>
+              </a>
+
+              <!-- item-->
+              <a href="javascript:void(0);" class="dropdown-item notify-item">
+                <img src="assets/images/flags/italy.jpg" alt="user-image" class="mr-1" height="12">
+                <span class="align-middle">Italian</span>
+              </a>
+
+              <!-- item-->
+              <a href="javascript:void(0);" class="dropdown-item notify-item">
+                <img src="assets/images/flags/spain.jpg" alt="user-image" class="mr-1" height="12">
+                <span class="align-middle">Spanish</span>
+              </a>
+
+              <!-- item-->
+              <a href="javascript:void(0);" class="dropdown-item notify-item">
+                <img src="assets/images/flags/russia.jpg" alt="user-image" class="mr-1" height="12">
+                <span class="align-middle">Russian</span>
+              </a>
+
+            </div>
+          </li>
+
+          <li class="dropdown notification-list">
+            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="false"
+              aria-expanded="false">
+              <!-- <i class="fe-bell noti-icon"></i> -->
+              <span class="noti-icon">
+                🔔
+              </span>
+              <span class="badge badge-danger rounded-circle noti-icon-badge">2</span>
+            </a>
+            <div class="dropdown-menu dropdown-menu-right dropdown-lg">
+
+              <!-- item-->
+              <div class="dropdown-item noti-title">
+                <h5 class="m-0">
+                  <span class="float-right">
+                    <a href="#" class="text-dark">
+                      <small>Clear All</small>
+                    </a>
+                  </span>Notification
+                </h5>
+              </div>
+
+              <div class="slimscroll noti-scroll">
+
+                <!-- item-->
+                <a href="javascript:void(0);" class="dropdown-item notify-item">
+                  <div class="notify-icon">
+                    <img src="assets/images/users/user.jpg" class="img-fluid rounded-circle" alt="" /> </div>
+                  <p class="notify-details">Cristina Pride</p>
+                  <p class="text-muted mb-0 user-msg">
+                    <small>Hi, How are you? What about our next meeting</small>
+                  </p>
+                </a>
+
+                <!-- item-->
+                <a href="javascript:void(0);" class="dropdown-item notify-item active">
+                  <div class="notify-icon bg-warning"><i class="mdi mdi-comment-account-outline"></i>
+                  </div>
+                  <p class="notify-details">Caleb Flakelar commented on Admin<small class="text-muted">1 min ago</small>
+                  </p>
+                </a>
+
+                <!-- item-->
+                <a href="javascript:void(0);" class="dropdown-item notify-item">
+                  <div class="notify-icon bg-info"><i class="mdi mdi-account-plus"></i></div>
+                  <p class="notify-details">New user registered.<small class="text-muted">5 hours
+                      ago</small></p>
+                </a>
+
+                <!-- item-->
+                <a href="javascript:void(0);" class="dropdown-item notify-item">
+                  <div class="notify-icon">
+                    <img src="assets/images/users/user.jpg" class="img-fluid rounded-circle" alt="" /> </div>
+                  <p class="notify-details">Karen Robinson</p>
+                  <p class="text-muted mb-0 user-msg">
+                    <small>Wow ! this admin looks good and awesome design</small>
+                  </p>
+                </a>
+
+                <!-- item-->
+                <a href="javascript:void(0);" class="dropdown-item notify-item">
+                  <div class="notify-icon bg-danger"><i class="mdi mdi-comment-account-outline"></i>
+                  </div>
+                  <p class="notify-details">Caleb Flakelar commented on Admin<small class="text-muted">4 days
+                      ago</small></p>
+                </a>
+
+                <!-- item-->
+                <a href="javascript:void(0);" class="dropdown-item notify-item">
+                  <div class="notify-icon bg-primary">
+                    <i class="mdi mdi-heart"></i>
+                  </div>
+                  <p class="notify-details">Carlos Crouch liked
+                    <b>Admin</b>
+                    <small class="text-muted">13 days ago</small>
+                  </p>
+                </a>
+              </div>
+
+              <!-- All-->
+              <a href="javascript:void(0);" class="dropdown-item text-center text-primary notify-item notify-all">
+                View all
+                <i class="fi-arrow-right"></i>
+              </a>
+
+            </div>
+          </li>
+
+          <li class="dropdown notification-list">
+            <a class="nav-link dropdown-toggle nav-user mr-0" data-toggle="dropdown" href="#" role="button"
+              aria-haspopup="false" aria-expanded="false">
+              <img src="assets/images/users/user.jpg" alt="user-image" class="rounded-circle">
+              <span class="pro-user-name ml-1">
+                James Kr <i class="mdi mdi-chevron-down"></i>
+              </span>
+            </a>
+            <div class="dropdown-menu dropdown-menu-right profile-dropdown ">
+              <!-- item-->
+              <div class="dropdown-item noti-title">
+                <h6 class="m-0">
+                  Welcome !
+                </h6>
+              </div>
+
+              <!-- item-->
+              <a href="javascript:void(0);" class="dropdown-item notify-item">
+                <i class="dripicons-user"></i>
+                <span>My Account</span>
+              </a>
+
+              <!-- item-->
+              <a href="javascript:void(0);" class="dropdown-item notify-item">
+                <i class="dripicons-gear"></i>
+                <span>Settings</span>
+              </a>
+
+              <!-- item-->
+              <a href="javascript:void(0);" class="dropdown-item notify-item">
+                <i class="dripicons-help"></i>
+                <span>Support</span>
+              </a>
+
+              <!-- item-->
+              <a href="javascript:void(0);" class="dropdown-item notify-item">
+                <i class="dripicons-lock"></i>
+                <span>Lock Screen</span>
+              </a>
+
+              <div class="dropdown-divider"></div>
+
+              <!-- item-->
+              <a href="javascript:void(0);" class="dropdown-item notify-item">
+                <i class="dripicons-power"></i>
+                <span>Logout</span>
+              </a>
+
+            </div>
+          </li>
+
+          <li class="dropdown notification-list">
+            <a href="javascript:void(0);" class="nav-link right-bar-toggle">
+              <!-- <i class="fe-settings noti-icon"></i> -->
+              <span class="noti-icon" style="font-size: 25px;">
+                ⚙️
+              </span>
+            </a>
+          </li>
+
+        </ul>
+
+        <ul class="list-unstyled topnav-menu-left m-0">
+
+          <li class="logo-box float-left">
+            <a href="" class="logo">
+              <span class="logo-lg">
+                <img src="assets/images/logo-light.png" alt="" height="30">
+              </span>
+              <span class="logo-sm">
+                <img src="assets/images/logo-sm.png" alt="" height="30">
+              </span>
+            </a>
+          </li>
+          <li class="app-search d-none d-md-block">
+            <form>
+              <input type="text" placeholder="Search..." class="form-control">
+              <button type="submit" class="sr-only"></button>
+            </form>
+          </li>
+
+        </ul>
+      </div> <!-- end container-fluid-->
+    </div>
+    <!-- end Topbar -->
+
+
+    <div class="topbar-menu">
+      <div class="container-fluid">
+        <div id="navigation">
+          <!-- Navigation Menu-->
+          <ul class="navigation-menu">
+
+            <li class="has-submenu">
+              <a href="index.html">
+                <span>🖥</span>
+                Dashboard
+              </a>
+            </li>
+
+            <li class="has-submenu">
+              <a href="campaign.html">
+                <span>📦</span>
+                Campaigns
+              </a>
+            </li>
+
+            <li class="has-submenu">
+              <a href="donation.html">
+                <span>🎁</span>
+                Donations
+              </a>
+            </li>
+
+            <li class="has-submenu">
+              <a href="#">
+                <span>🔊</span>
+                Advertise
+              </a>
+              <ul class="submenu">
+                <li>
+                  <a href="#">Banner Ad</a>
+                </li>
+                <li>
+                  <a href="#">Text Ad</a>
+                </li>
+              </ul>
+            </li>
+
+            <li class="has-submenu">
+              <a href="#">
+                <span>🏘</span>
+                Investment
+              </a>
+            </li>
+
+            <li class="has-submenu">
+              <a href="#">
+                <span>💵</span>
+                Loan
+              </a>
+            </li>
+          </ul>
+          <!-- End navigation menu -->
+
+          <div class="clearfix"></div>
+        </div>
+        <!-- end #navigation -->
+      </div>
+      <!-- end container -->
+    </div>
+    <!-- end navbar-custom -->
+
+  </header>
+  <!-- End Navigation Bar-->
+
+  <!-- ============================================================== -->
+  <!-- Start Page Content here -->
+  <!-- ============================================================== -->
+
+  <div class="wrapper">
+    <div class="container-fluid">
+
+      <!-- start page title -->
+      <div class="row">
+        <div class="col-12">
+          <div class="page-title-box">
+            <div class="page-title-right">
+              <button class="btn btn-outline-primary waves-effect waves-light makePledgeBtn" data-toggle="modal"
+                data-target="#makePledge">
+                Make a pledge
+              </button>
+            </div>
+            <h4 class="page-title">Donations</h4>
+          </div>
+        </div>
+      </div>
+      <!-- end page title -->
+
+      <!-- start Modals container -->
+      <div class="all_modals_container">
+
+        <!-- Make Pledge Modal -->
+        <div class="modal fade makePledge" id="makePledge" tabindex="-1" role="dialog" aria-labelledby="makePledge"
+          aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h4 class="modal-title text-dark" id="makePledgeTitle">Make Pledge</h4>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">×</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <p id="modalAlert" class="text-center alert alert-warning">
+                  You're about to make a pledge and will be rewarded,
+                  remember your reward will reflet when your pledge is
+                  <span class="text-success">fulfilled</span>.
+                </p>
+                <form action="/" id="makePledgeForm">
+                  <div class="container">
+                    <div class="form-group row">
+                      <div class="col-lg-8 mb-2">
+                        <label class="text-dark" for="pledgeRange">
+                          Pledge Range
+                          <b class="text-danger">*</b>
+                        </label>
+                        <select name="pledgeRange" id="pledgeRange" oninput="(function() {
+                          var pledgeRange = document.querySelector('#pledgeRange');
+                          var gcReward = document.querySelector('#gcReward');
+
+                          for (const child of pledgeRange.children) {
+                            if(pledgeRange.value === child.value) {
+                              gcReward.value = `${child.dataset.gc}`;
+                            }
+                          }
+                        })();" class="form-control" required>
+                          <option value="">Choose a range</option>
+                          <option value="100 - 1,099" data-gc="100">100 - 1,099</option>
+                          <option value="1,100 - 2,099" data-gc="200">1,100 - 2,099</option>
+                          <option value="2,100 - 3,099" data-gc="300">2,100 - 3,099</option>
+                          <option value="3,100 - 4,099" data-gc="400">3,100 - 4,099</option>
+                          <option value="4,100 - 5,099" data-gc="500">4,100 - 5,099</option>
+                          <option value="5,100 - 6,099" data-gc="600">5,100 - 6,099</option>
+                          <option value="6,100 - 7,099" data-gc="700">6,100 - 7,099</option>
+                          <option value="7,100 - 8,099" data-gc="800">7,100 - 8,099</option>
+                          <option value="8,100 - 9,099" data-gc="900">8,100 - 9,099</option>
+                          <option value="9,100 - 10,099" data-gc="1000">9,100 - 10,099</option>
+                          <option value="10,100 - 11,099" data-gc="1100">10,100 - 11,099</option>
+                          <option value="11,100 - 12,099" data-gc="1200">11,100 - 12,099</option>
+                          <option value="12,100 - 13,099" data-gc="1300">12,100 - 13,099</option>
+                          <option value="13,100 - 14,099" data-gc="1400">13,100 - 14,099</option>
+                          <option value="14,100 - 15,099" data-gc="1500">14,100 - 15,099</option>
+                          <option value="15,100 - 16,099" data-gc="1600">15,100 - 16,099</option>
+                          <option value="16,100 - 17,099" data-gc="1700">16,100 - 17,099</option>
+                          <option value="17,100 - 18,099" data-gc="1800">17,100 - 18,099</option>
+                          <option value="18,100 - 19,099" data-gc="1900">18,100 - 19,099</option>
+                          <option value="19,100 - 20,000" data-gc="2000">19,100 - 20,000</option>
+                        </select>
+                      </div>
+                      <div class="col-lg-4">
+                        <label class="text-dark" for="pledgeRange">
+                          Gold Coin (GC)
+                          <b class="text-danger">*</b>
+                        </label>
+                        <input type="text" name="gcReward" id="gcReward" class="form-control" placeholder="Reward"
+                          readonly required>
+                      </div>
+                    </div>
+                    <div class="form-group row">
+                      <div class="col-lg-12">
+                        <label class="text-dark" for="pledgeRange">
+                          Pledge Amount
+                          <b class="text-danger">*</b>
+                        </label>
+                        <input type="number" name="pledgeAmount" id="pledgeAmount" class="form-control"
+                          placeholder="Pledge Amount" required>
+                      </div>
+                    </div>
+                  </div>
+                </form>
+
+                <!-- Last info text -->
+                <div class="text-center mt-2 ">
+                  <small class="text-muted">
+                    Your Pledge will be at
+                    "<span class="text-primary">pending</span>", untill requested.
+                  </small>
+                </div>
+              </div>
+
+              <div class="modal-footer">
+                <button type="button" class="btn btn-light waves-effect waves-light" data-dismiss="modal">Close</button>
+                <button type="submit" form="makePledgeForm" class="btn btn-primary waves-effect waves-light">
+                  Make Pledge
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- end Modals container -->
+
+      <!-- start noDonations -->
+      <div class="noDonations hide">
+        <div class="row">
+          <div class="col-lg-12 col-xl-12">
+            <div class="text-center p-2 mt-5">
+              <div style="font-size: 50px; filter: grayscale(1);">🎁</div>
+              <h4 class="text-muted m-0 mb-1" style="font-weight: 300;">No pledge found...</h4>
+              <button class="btn btn-sm btn-link waves-effect waves-light makePledgeBtn" data-toggle="modal"
+                data-target="#makePledge">
+                Make a pledge
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- end noDonations -->
+
+      <div class="donations">
+        <div class="row">
+          <!-- start col -->
+          <div class="col-lg-4">
+            <div class="text-center donationGiftBox">🎁</div>
+            <div class="card">
+              <div class="card-body p-4">
+                <div class="rewardAndTimer">
+                  <span class="rewardCon">
+                    <span>💰</span>
+                    <span class="pledgeReward">500</span>
+                  </span>
+                  <span class="text-primary float-right pledgeTimer">2days - 3h : 56m . 48s</span>
+                </div>
+                <div class="text-center">
+                  <p class="mb-2">
+                    <h2 class="text-dark">₦5,000</h2>
+                    <small class="text-muted p-2">Pledged on: Tue, 23rd Jan 2020</small>
+                  </p>
+                  <div class="pledgeFooter">
+                    <button class="btn btn-success btn-block">Fulfil Pledge</button>
+                  </div>
+                </div>
+              </div> <!-- end card-body-->
+            </div>
+          </div>
+          <!-- end col-->
+
+
+          <!-- start col -->
+          <div class="col-lg-4">
+            <div class="text-center donationGiftBox">🎁</div>
+            <div class="card">
+              <div class="card-body p-4">
+                <div class="rewardAndTimer">
+                  <span class="rewardCon">
+                    <span>💰</span>
+                    <span class="pledgeReward">500</span>
+                  </span>
+                  <span class="text-primary float-right pledgeTimer hide">2days - 3h : 56m . 48s</span>
+                </div>
+                <div class="text-center">
+                  <p class="mb-2">
+                    <h2 class="text-dark">₦5,000</h2>
+                    <small class="text-muted p-2">Pledged on: Tue, 23rd Jan 2020</small>
+                  </p>
+                  <div class="pledgeFooter">
+                    <button class="btn btn-info btn-block" disabled>Pending...</button>
+                  </div>
+                </div>
+              </div> <!-- end card-body-->
+            </div>
+          </div>
+          <!-- end col-->
+
+          <!-- start col -->
+          <div class="col-lg-4">
+            <div class="text-center donationGiftBox">🎁</div>
+            <div class="card">
+              <div class="card-body p-4">
+                <div class="rewardAndTimer">
+                  <span class="rewardCon">
+                    <span>💰</span>
+                    <span class="pledgeReward">500</span>
+                  </span>
+                  <span class="text-primary float-right pledgeTimer hide">2days - 3h : 56m . 48s</span>
+                </div>
+                <div class="text-center">
+                  <p class="mb-2">
+                    <h2 class="text-dark">₦5,000</h2>
+                    <small class="text-muted p-2">Pledged on: Tue, 23rd Jan 2020</small>
+                  </p>
+                  <div class="pledgeFooter">
+                    <button class="btn btn-warning btn-block" disabled>Fulfilled</button>
+                  </div>
+                </div>
+              </div> <!-- end card-body-->
+            </div>
+          </div>
+          <!-- end col-->
+        </div>
+      </div>
+    </div>
+    <!-- end container-fluid -->
+  </div>
+  <!-- end wrapper -->
+
+  <!-- ============================================================== -->
+  <!-- End Page content -->
+  <!-- ============================================================== -->
+
+  <!-- Footer Start -->
+  <footer class="footer">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-6">
+          KiHearts Network - 2020 &copy; All Rights Reserved
+        </div>
+        <div class="col-md-6">
+          <div class="text-md-right footer-links d-none d-sm-block">
+            <a href="https://github.com/cusicon" target="blank">
+              Designed By -- Cusicon
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- end Footer -->
+
+  <!-- Right Sidebar -->
+  <div class="right-bar">
+    <div class="rightbar-title">
+      <a href="javascript:void(0);" class="right-bar-toggle float-right">
+        <i class="mdi mdi-close"></i>
+      </a>
+      <h5 class="m-0 text-white">Settings</h5>
+    </div>
+    <div class="slimscroll-menu">
+      <hr class="mt-0">
+      <h5 class="pl-3">Basic Settings</h5>
+      <hr class="mb-0" />
+
+
+      <div class="p-3">
+        <div class="checkbox checkbox-primary mb-2">
+          <input id="checkbox1" type="checkbox" checked>
+          <label for="checkbox1">
+            Notifications
+          </label>
+        </div>
+        <div class="checkbox checkbox-primary mb-2">
+          <input id="checkbox2" type="checkbox" checked>
+          <label for="checkbox2">
+            API Access
+          </label>
+        </div>
+        <div class="checkbox checkbox-primary mb-2">
+          <input id="checkbox3" type="checkbox">
+          <label for="checkbox3">
+            Auto Updates
+          </label>
+        </div>
+        <div class="checkbox checkbox-primary mb-2">
+          <input id="checkbox4" type="checkbox" checked>
+          <label for="checkbox4">
+            Online Status
+          </label>
+        </div>
+        <div class="checkbox checkbox-primary mb-0">
+          <input id="checkbox5" type="checkbox" checked>
+          <label for="checkbox5">
+            Auto Payout
+          </label>
+        </div>
+      </div>
+
+      <!-- Timeline -->
+      <hr class="mt-0" />
+      <h5 class="pl-3 pr-3">Messages <span class="float-right badge badge-pill badge-danger">25</span></h5>
+      <hr class="mb-0" />
+      <div class="p-3">
+        <div class="inbox-widget">
+          <div class="inbox-item">
+            <div class="inbox-item-img"><img src="assets/images/users/user.jpg" class="rounded-circle" alt=""></div>
+            <p class="inbox-item-author"><a href="javascript: void(0);" class="text-dark">Chadengle</a></p>
+            <p class="inbox-item-text">Hey! there I'm available...</p>
+            <p class="inbox-item-date">13:40 PM</p>
+          </div>
+          <div class="inbox-item">
+            <div class="inbox-item-img"><img src="assets/images/users/user.jpg" class="rounded-circle" alt=""></div>
+            <p class="inbox-item-author"><a href="javascript: void(0);" class="text-dark">Tomaslau</a></p>
+            <p class="inbox-item-text">I've finished it! See you so...</p>
+            <p class="inbox-item-date">13:34 PM</p>
+          </div>
+          <div class="inbox-item">
+            <div class="inbox-item-img"><img src="assets/images/users/user.jpg" class="rounded-circle" alt=""></div>
+            <p class="inbox-item-author"><a href="javascript: void(0);" class="text-dark">Stillnotdavid</a>
+            </p>
+            <p class="inbox-item-text">This theme is awesome!</p>
+            <p class="inbox-item-date">13:17 PM</p>
+          </div>
+
+          <div class="inbox-item">
+            <div class="inbox-item-img"><img src="assets/images/users/user.jpg" class="rounded-circle" alt=""></div>
+            <p class="inbox-item-author"><a href="javascript: void(0);" class="text-dark">Kurafire</a></p>
+            <p class="inbox-item-text">Nice to meet you</p>
+            <p class="inbox-item-date">12:20 PM</p>
+
+          </div>
+          <div class="inbox-item">
+            <div class="inbox-item-img"><img src="assets/images/users/user.jpg" class="rounded-circle" alt=""></div>
+            <p class="inbox-item-author"><a href="javascript: void(0);" class="text-dark">Shahedk</a></p>
+            <p class="inbox-item-text">Hey! there I'm available...</p>
+            <p class="inbox-item-date">10:15 AM</p>
+          </div>
+          <br><br>
+        </div> <!-- end inbox-widget -->
+      </div> <!-- end .p-3-->
+
+    </div> <!-- end slimscroll-menu-->
+  </div>
+  <!-- /Right-bar -->
+
+  <!-- Right bar overlay-->
+  <div class="rightbar-overlay"></div>
+
+  <!-- Vendor js -->
+  <script src="assets/js/vendor.min.js"></script>
+
+  <!-- App js -->
+  <script src="assets/js/app.min.js"></script>
+
+</body>
+
+</html>
